@@ -13,25 +13,10 @@
   html,body {
     color: black;
     background-color: #ffffff;
-    display: inline-block;
     width: 100%;
     height: 100%;
     margin: 0px;
     padding: 0px;
-    padding-bottom: 30vw;
-    overflow-x: hidden; 
-  }
-  
-  body::-webkit-scrollbar {
-    width: 0.25rem;
-  }
-  
-  body::-webkit-scrollbar-track {
-    background: #1e1e24;
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background: #6649b8;
   }
   
   main {
@@ -44,7 +29,6 @@
     z-index: 999;
     background-color: var(--bg-primary);
     transition: width 400ms ease;
-    overflow: scroll;
   }
   
   .navbar-nav {
@@ -247,12 +231,12 @@ h2.myNameTitle::before {
 .description {
     display: flex;
     font-size: 23px;
-    color:#555555;
-    text-shadow: #ffffff;
+    color:#ffffff;
+    text-shadow: #555555;
     margin-left: 15vw;
     margin-right: 15vw;
     text-align: left;
-    padding: 0px;
+    padding-left: 1vw;
     overflow-x: hidden; 
 }
 
@@ -283,7 +267,9 @@ h2.myNameTitle::before {
     word-wrap: break-word;
 }
 
-.dot1{
+/* Buttons in the console tab */
+
+.close-button{
     height: 13px;
     width: 13px;
     margin-left: 8px;
@@ -292,7 +278,7 @@ h2.myNameTitle::before {
     display: inline-block;
 }
 
-.dot2{
+.minimize-button{
     height: 13px;
     width: 13px;
     background-color: #FFBD44;
@@ -300,13 +286,15 @@ h2.myNameTitle::before {
     display: inline-block;
 }
 
-.dot3{
+.fullscreen-button{
     height: 13px;
     width: 13px;
     background-color: #00CA4E;
     border-radius: 50%;
     display: inline-block;
 }
+
+/* Text properties for code in console tab */
 
 .hyperlinks {
     text-decoration: none;
@@ -337,14 +325,10 @@ h2.myNameTitle::before {
   font-weight: bolder;
   font-size: 1.5vw;
   color: #5F9EA0;
-  height: 22px;
-  border-bottom: 0.5vw solid #555555;
   text-align: center;
-  margin: 0 25vw 0 25vw;
+  margin-bottom: 40vw;
 }
 
-.titles p {
-  max-width: auto;
-  font-size: 2vw;
-  background-color: #ffffff;
+.titles span {
+  margin-bottom: 20vw;
 }

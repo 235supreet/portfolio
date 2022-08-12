@@ -11,7 +11,7 @@
         <nav class="navbar">
             <ul class="navbar-nav">
                 <li class="logo">
-                    <a href="#" class="nav-link">
+                    <a href="#titles" class="nav-link">
                     <span class="link-text logo-text">Supreet</span>
                         <svg
                             aria-hidden="true"
@@ -51,8 +51,8 @@
                     </a>
                 </li>
         
-                <li class="nav-item">
-                    <a href="https://github.com/235supreet" class="nav-link">
+                <li class="projects nav-item">
+                    <a href="#" class="nav-link" id="projects">
                         <svg 
                             clip-rule="evenodd" 
                             fill-rule="evenodd" 
@@ -107,9 +107,9 @@
             <div class="console-window">
                 <div class="console">
                     <div>
-                        <a href="#" onclick="return false;"><span class="dot1"></span></a>
-                        <a href="#" onclick="return false;"><span class="dot2"></span></a>
-                        <a href="#" onclick="return false;"><span class="dot3"></span></a>
+                        <a href="#" onclick="return false;"><span class="close-button"></span></a>
+                        <a href="#" onclick="return false;"><span class="minimize-button"></span></a>
+                        <a href="#" onclick="return false;"><span class="fullscreen-button"></span></a>
                     </div>
                     <div class="console-main">
                         <p>
@@ -137,8 +137,8 @@
             </div>
         </div>
 
-        <div class="titles">
-            <p>PROJECTS</p>
+        <div class="titles" id="projects-div">
+            <span>PROJECTS</span>
         </div>
 
         <script>
@@ -163,6 +163,12 @@
                     x.className = "topnav";
                 }
             }
+
+            $("#projects").click(function() {
+                $([document.documentElement, document.body]).animate({
+                    scrollTop: $("#projects-div").offset().top
+                }, 1000);
+            });
             
         </script>
 
