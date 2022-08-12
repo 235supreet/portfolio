@@ -231,7 +231,7 @@ h2.myNameTitle::before {
 .description {
     display: flex;
     font-size: 23px;
-    color:#ffffff;
+    color:#343434;
     text-shadow: #555555;
     margin-left: 15vw;
     margin-right: 15vw;
@@ -243,6 +243,7 @@ h2.myNameTitle::before {
 .console-window {
   background: none;
   padding: 5vw 0 5vw 0;
+  font-family: monospace;
 }
 
 .console {
@@ -253,7 +254,7 @@ h2.myNameTitle::before {
     border: 0px none;
     border-radius: 9px;
     color: #ffffff;
-    font-size: 21px;
+    font-size: 19px;
     -webkit-box-shadow: 0px 0px 50px -15px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 50px -15px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 50px -15px rgba(0,0,0,0.75);
@@ -265,6 +266,10 @@ h2.myNameTitle::before {
     padding: 40px 30px 30px 30px; 
     background-color: grey;
     word-wrap: break-word;
+}
+
+.console-main p, a, span {
+  font-family: monospace;
 }
 
 /* Buttons in the console tab */
@@ -298,12 +303,18 @@ h2.myNameTitle::before {
 
 .hyperlinks {
     text-decoration: none;
-    color: cyan;
+    color: #35feff;
+    transition: 0.1s ease-in-out;
+
+}
+
+.hyperlinks:hover {
+  color: #2acccc;
 }
 
 .normal_text {
     text-decoration: none;
-    color: khaki;
+    color: #e7d184;
 }
 
 .normal_text.text_gap {
@@ -329,6 +340,6 @@ h2.myNameTitle::before {
   margin-bottom: 40vw;
 }
 
-.titles span {
+.titles p {
   margin-bottom: 20vw;
 }
