@@ -321,7 +321,7 @@ h2.myNameTitle::before {
 }
 
 .fixed-background {
-  background-image: url("../images/background.png");
+  background-image: url("../images/background.svg");
   min-height: 100%;
   background-attachment: fixed;
   background-position: center;
